@@ -1,23 +1,18 @@
-# Uploading OFFBEAT
+# OFFBEAT portfolio upload package
 
-`offbeat-website.zip` contains the ready-to-serve website. It is a static site: the server does not need Node.js, Python, npm, a database, or a build step.
+`offbeat-website.zip` contains the completed static portfolio concept. No server runtime or database is required.
 
-1. Download and extract `offbeat-website.zip` on your computer, or upload it and extract it using your hosting control panel.
-2. Place its contents in your website's document root, usually `public_html`, `www`, or `htdocs`. Upload `index.html`, `style.css`, `app.js`, and the entire `assets` folder together. Back up any existing website before replacing files.
-3. Open your domain. If uploading into a subfolder, open that subfolder's URL instead. The site's relative asset paths support both locations.
-4. Check the menu, both journal articles, session calendar downloads and contact dialog. If replacing an older copy, refresh your browser cache.
+After deployment is explicitly approved:
 
-Do not upload the surrounding project directory or the ZIP itself as the website. `index.html` should be directly inside the intended public directory. Use HTTPS provided by your hosting service.
+1. Back up the existing hosted files.
+2. Extract the ZIP and upload its contents to the website document root (`public_html`, `www`, or `htdocs`). `index.html` must sit directly in the intended public directory, beside `style.css`, `app.js`, `robots.txt`, `sitemap.xml` and `assets/`.
+3. Preserve all font-license files in `assets/fonts/`.
+4. Refresh the site and verify the menu, three session dialogs, both journal articles, paused-motion behavior, concept enquiry and Silverside disclosure link.
 
-## Before a real launch
+Use HTTPS. Canonical, social URLs, sitemap and robots.txt are configured for https://offbeat.silverside.co/. Change them if using a different production hostname. Assets use relative paths and work from a subfolder.
 
-- The brand, events and venue details are fictional demo content. Replace them as appropriate.
-- Replace the clearly labelled SVG image placeholders and update their alt text/captions in `index.html`.
-- Contact creates an email draft, rather than submitting to a server. Replace `hello@offbeat.example` in `app.js` with your actual address. Visitors need an email app configured to use that action.
-- Fonts load from Google Fonts. The website has system-font fallbacks, but self-host the fonts if you require completely offline operation.
+The imagery and public content are finished. Offbeat is a fictional design concept; do not add real booking/payment facilities without revising that scope. Enquiries currently lead to https://www.silverside.co/ rather than collecting visitor information. Fonts and images are served locally.
 
-## Updating
+The ZIP excludes source documentation, screenshots, unused legacy placeholders and fictional calendar files. Genuine portfolio screenshots are separately stored in `portfolio-assets/`.
 
-Edit the source project, run `npm run check` and `npm run build`, then upload the contents of `dist/`. After changing CSS or JavaScript, update their version query strings in `index.html` to prevent visitors seeing cached files.
-
-This package includes only public website files, with no development files, screenshots, credentials or server configuration.
+This package was prepared locally. Its creation does not deploy the site or modify the hosted Offbeat or Silverside websites.
