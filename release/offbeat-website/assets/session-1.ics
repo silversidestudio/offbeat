@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OFFBEAT//Design Demo//EN
+BEGIN:VEVENT
+UID:offbeat-1@example.com
+DTSTAMP:20261011T120000Z
+DTSTART:20261024T180000Z
+DTEND:20261024T220000Z
+SUMMARY:OFFBEAT Demo - After the last train
+LOCATION:The Old Printworks\, Peckham
+DESCRIPTION:Fictional design experiment. This is not a real event.
+END:VEVENT
+END:VCALENDAR
