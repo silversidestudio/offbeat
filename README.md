@@ -26,7 +26,7 @@ npm run build
 - Session dialogs describe the imagined experience. Calendar downloads, the fictional accessibility promise and dead email draft have been removed.
 - The enquiry dialog explains the concept and provides a meaningful link to Silverside.
 - Both journal articles are complete and open with motion running or paused. Dialogs support native keyboard focus trapping, Escape, focus restoration and scrolling on small displays.
-- Touch controls are at least 44px. Responsive adjustments protect the hero title and session CTA. Reduced-motion preferences and manual pause suppress decorative motion.
+- Touch controls are at least 44px. Responsive adjustments protect the hero title and session CTA. System reduced-motion preferences suppress decorative motion. The visible pause/play control has been removed.
 - Fonts are self-hosted Latin WOFF2 files with SIL Open Font Licenses. Shared DM Sans files are deduplicated in the build. No external font service or third-party JavaScript is required.
 - Accurate concept title/description, canonical, social metadata, social image, robots.txt and sitemap are included. Indexing is deliberately allowed for an honestly described portfolio concept; no LocalBusiness/Event schema is used.
 

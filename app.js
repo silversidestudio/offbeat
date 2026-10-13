@@ -2,7 +2,6 @@ const menu = document.querySelector('#menu');
 const details = document.querySelector('#details');
 const toggle = document.querySelector('.menu-toggle');
 const content = document.querySelector('#detail-content');
-const motionButton = document.querySelector('.motion-toggle');
 const recordScene = document.querySelector('.record-scene');
 const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 let returnFocus;
@@ -119,11 +118,7 @@ function updateMotion(paused) {
   if (paused) recordScene.style.transform = '';
   document.body.classList.toggle('motion-paused', paused);
   document.documentElement.classList.toggle('motion-paused', paused);
-  motionButton.setAttribute('aria-pressed', String(paused));
-  motionButton.setAttribute('aria-label', paused ? 'Resume decorative motion' : 'Pause decorative motion');
-  motionButton.textContent = paused ? '▷' : 'Ⅱ';
 }
-motionButton.addEventListener('click', () => updateMotion(!document.body.classList.contains('motion-paused')));
 reduced.addEventListener('change', event => updateMotion(event.matches));
 updateMotion(reduced.matches);
 
